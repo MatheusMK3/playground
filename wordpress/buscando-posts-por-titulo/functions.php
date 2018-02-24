@@ -23,7 +23,7 @@ function buscar_pessoa_por_nome ($nome)
 	// Criamos uma Query do Wordpress
 	$pessoa_query = new WP_Query (array(
 		// Usaremos este campo 'wp_buscar_por_titulo' para fazer a busca por título
-		'wp_buscar_por_titulo' => $author->display_name,
+		'wp_buscar_por_titulo' => $nome,
 
 		// Filtramos nossa Query, limitando apenas ao post_type de 'pessoa'
 		'post_type' => 'pessoa',
